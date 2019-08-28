@@ -12,47 +12,48 @@ public class CalcController {
 
 	@Autowired
 	private CalcLogic calcLogic;
-	
+
 	@RequestMapping("/add")
 	public String add() {
-		int num1 = 11;
-		int num2 = 22;
-		
+
+		int num1 = 999;
+		int num2 = 555;
+
 		int resultOfAdd = calcLogic.add(num1, num2);
-		
+
 		System.out.println(num1 + "+" + num2 + "=" + resultOfAdd);
 		return "finished";
 	}
-	
+
 	@RequestMapping("/sub")
 	public String sub() {
 		int num1 = 3;
 		int num2 = 2;
-		
+
 		int resultOfSub = calcLogic.sub(num1, num2);
-		
-		System.out.println(num1 + "-" +num2 + "=" + resultOfSub);
+
+		System.out.println(num1 + "-" + num2 + "=" + resultOfSub);
 		return "finished";
 	}
-	
+
 	@RequestMapping("/multi")
 	public String multi() {
 		int num1 = 3;
 		int num2 = 2;
-		
+
 		int resultOfMulti = calcLogic.multi(num1, num2);
-		
+
 		System.out.println(num1 + "*" + num2 + "=" + resultOfMulti);
 		return "finished";
 	}
-	
+
 	@RequestMapping("/div")
 	public String div() {
 		int num1 = 4;
 		int num2 = 2;
-		
+
 		int resultOfDiv = calcLogic.div(num1, num2);
-		
+
 		System.out.println(num1 + "/" + num2 + "=" + resultOfDiv);
 		return "finished";
 	}
