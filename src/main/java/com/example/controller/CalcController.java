@@ -15,8 +15,8 @@ public class CalcController {
 	
 	@RequestMapping("/add")
 	public String add() {
-		int num1 = 2;
-		int num2 = 3;
+		int num1 = 999;
+		int num2 = 555;
 		
 		int resultOfAdd = calcLogic.add(num1, num2);
 		
